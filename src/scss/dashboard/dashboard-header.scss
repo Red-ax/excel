@@ -1,0 +1,47 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+
+.dashboard__table {
+  padding: 1rem;
+}
+
+.dashboard__table_list-header {
+  display: flex;
+  justify-content: space-between;
+  color: #202124;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 0 12px;
+}
+
+.dashboard__table_list {
+  @include clear-list;
+}
+
+.dashboard__table_record {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  border: 1px solid $separator-color;
+  border-radius: 10px;
+  //background: lightpink;
+
+  &:hover {
+    border-color: green;
+    background: #e6f4ea;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #202124;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

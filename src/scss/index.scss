@@ -1,5 +1,33 @@
-$color: pink;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "normalize.css";
+
+@import "excel/header";
+@import "excel/toolbar";
+@import "excel/formula";
+@import "excel/table";
+
+@import "dashboard/dashboard-header";
+@import "dashboard/dashboard-new";
+@import "dashboard/dashboard-table";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background: $color;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.excel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.dashboard__view {
+  max-width: 1000px;
+  margin: 0 auto;
 }
